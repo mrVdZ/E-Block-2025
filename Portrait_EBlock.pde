@@ -8,7 +8,9 @@ void setup(){
 
 void draw(){
   // This runs continuously as a linear loop!
-  
+  fill(220, 100, 32);
   rect(100, 100, 200, 200);
+  
+  ellipse(300, 200, 100, 100);
 
 }
