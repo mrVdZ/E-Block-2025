@@ -44,4 +44,19 @@ for(int i = 0; i < value; i++){
 }
 
 ```
+---
+```
+// This is a condition
+int x = 0;
+int y = 1;
+
+if(x < y){
+  // Do something
+}
+else{
+  // Do something else
+}
+
+
+```
 
