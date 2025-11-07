@@ -5,3 +5,55 @@
 // how to use Objects/classes
 // pushMatrix() and popMatrix()
 // and it will also show 3D
+
+
+// Global Variable
+
+int translateX = 0;
+
+
+// This function runs once at the beginning
+void setup()
+
+{
+    size(200, 200);
+    background(200, 200, 255);
+    
+    rectMode(CENTER);
+    
+    frameRate(5);
+  
+}
+
+
+// This function runs as a loop at 30 times per second
+void draw()
+
+{
+    // Unaffected Rectangle
+    fill(255, 100, 100);
+    rect(20, 20, 10, 10); // X, Y, W, H
+  
+  pushMatrix(); // Creates a virtual canvas for implementing transformations
+  
+    
+    translate(translateX, 40);
+    rotate(PI/3.0);
+    fill(255, 100, 100);
+   
+    rect(0, 0, 30, 30); // X, Y, W, H
+    
+    pushMatrix();
+      translate(30, 40);
+      ellipse(0, 0, 30, 30);
+    popMatrix();
+    
+  popMatrix(); // releases the virtual canvas
+  
+     // Unaffected Rectangle
+    fill(255, 200, 100);
+    rect(0, 00, 10, 10); // X, Y, W, H
+    
+    translateX++;
+  
+}
