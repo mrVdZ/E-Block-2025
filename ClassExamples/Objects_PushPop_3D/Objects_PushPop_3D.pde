@@ -23,7 +23,7 @@ BouncyBall ballThatBounces; // Declares the object from the class
 void setup()
 
 {
-    size(200, 200);
+    size(200, 200, P3D);
     background(200, 200, 255);
     
     rectMode(CENTER);
